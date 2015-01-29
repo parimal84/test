@@ -1,0 +1,5 @@
+BoxAPIConnection api = new BoxAPIConnection("MBylNefgYjCIQwl5EFyDZMEp4lLOgpey");
+BoxFolder rootFolder = BoxFolder.getRootFolder(api);
+for (BoxItem.Info itemInfo : rootFolder) {
+    System.out.format("[%d] %s\n", itemInfo.getID(), itemInfo.getName());
+}
